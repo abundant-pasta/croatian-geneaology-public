@@ -1,0 +1,1315 @@
+[
+  {
+    "id": "stjepan_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "Stjepan",
+      "last name": "Zaluški",
+      "display": "Stjepan Zaluški",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "proven",
+      "confidence label": "Proven parent",
+      "notes": "Father of Josip in 1905 Pokupsko marriage.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "jaga_kuzmic"
+      ],
+      "children": [
+        "josip_zaluski"
+      ]
+    }
+  },
+  {
+    "id": "jaga_kuzmic",
+    "data": {
+      "gender": "F",
+      "first name": "Jaga",
+      "last name": "Kuzmić",
+      "display": "Jaga Kuzmić",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "proven",
+      "confidence label": "Proven parent",
+      "notes": "Mother of Josip in 1905 Pokupsko marriage.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "stjepan_zaluski"
+      ],
+      "children": [
+        "josip_zaluski"
+      ]
+    }
+  },
+  {
+    "id": "josip_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "Josip / Joseph",
+      "last name": "Zaluški / Zaluski",
+      "display": "Josip / Joseph Zaluski",
+      "lifespan": "c. 1877-1879 - 1947",
+      "place": "Pokupsko; North Braddock; Aliquippa",
+      "confidence": "proven",
+      "confidence label": "Proven core person",
+      "notes": "1905 Pokupsko marriage proves parents; 1920 declaration proves declared Baltimore arrival on Breslau.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "stjepan_zaluski",
+        "jaga_kuzmic"
+      ],
+      "spouses": [
+        "ana_popovcic"
+      ],
+      "children": [
+        "joseph_zaluski_child",
+        "john_richard_zaluski",
+        "matthew_zaluski",
+        "joanna_caroline_zaluski",
+        "jacob_david_zaluski",
+        "philip_zaluski"
+      ]
+    }
+  },
+  {
+    "id": "joso_isek_candidate",
+    "data": {
+      "gender": "M",
+      "first name": "Joso",
+      "last name": "Išek",
+      "display": "Joso Išek",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "candidate",
+      "confidence label": "Candidate parent",
+      "notes": "Candidate father of Mara Išek from the best current baptism candidate: Mara Išek, baptized 15 Aug 1852. Needs household/status animarum or parent marriage before treating as proven.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "dora_zugaj_candidate"
+      ],
+      "children": [
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "dora_zugaj_candidate",
+    "data": {
+      "gender": "F",
+      "first name": "Dora",
+      "last name": "Žugaj",
+      "display": "Dora Žugaj",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "candidate",
+      "confidence label": "Candidate parent",
+      "notes": "Candidate mother of Mara Išek from the best current baptism candidate: Mara Išek, baptized 15 Aug 1852. Needs household/status animarum or parent marriage before treating as proven.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "joso_isek_candidate"
+      ],
+      "children": [
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "pavao_popovcic",
+    "data": {
+      "gender": "M",
+      "first name": "Pavao / Pavo",
+      "last name": "Popovčić",
+      "display": "Pavao Popovčić",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "proven",
+      "confidence label": "Proven parent",
+      "notes": "Father of Ana in 1905 Pokupsko marriage; collateral child records support same family cluster.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "mata_mara_isek"
+      ],
+      "children": [
+        "ana_popovcic",
+        "agata_popovcic",
+        "katarina_popovcic",
+        "pavao_popovcic_child",
+        "kata_popovcic_child",
+        "josip_popovcic_sibling"
+      ]
+    }
+  },
+  {
+    "id": "mata_mara_isek",
+    "data": {
+      "gender": "F",
+      "first name": "Mata / Mara",
+      "last name": "Išek",
+      "display": "Mata / Mara Išek",
+      "lifespan": "",
+      "place": "Pokupsko parish area",
+      "confidence": "strong_lead",
+      "confidence label": "Proven in marriage; Mara form strong",
+      "notes": "1905 marriage reads Mata/Jšek; collateral records point toward Mara Išek.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "joso_isek_candidate",
+        "dora_zugaj_candidate"
+      ],
+      "spouses": [
+        "pavao_popovcic"
+      ],
+      "children": [
+        "ana_popovcic",
+        "agata_popovcic",
+        "katarina_popovcic",
+        "pavao_popovcic_child",
+        "kata_popovcic_child",
+        "josip_popovcic_sibling"
+      ]
+    }
+  },
+  {
+    "id": "ana_popovcic",
+    "data": {
+      "gender": "F",
+      "first name": "Ana / Anna",
+      "last name": "Popovčić / Popovich",
+      "display": "Ana / Anna Popovčić Zaluski",
+      "lifespan": "c. 1885 - 1951",
+      "place": "Pokupsko; North Braddock; Independence Township",
+      "confidence": "proven",
+      "confidence label": "Proven core person",
+      "notes": "1905 marriage proves parents; 1885 baptism remains a strong candidate pending household bridge.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ],
+      "spouses": [
+        "josip_zaluski"
+      ],
+      "children": [
+        "joseph_zaluski_child",
+        "john_richard_zaluski",
+        "matthew_zaluski",
+        "joanna_caroline_zaluski",
+        "jacob_david_zaluski",
+        "philip_zaluski"
+      ]
+    }
+  },
+  {
+    "id": "agata_popovcic",
+    "data": {
+      "gender": "F",
+      "first name": "Agata",
+      "last name": "Popovčić",
+      "display": "Agata Popovčić",
+      "lifespan": "1887 - ?",
+      "place": "Pokupsko",
+      "confidence": "strong_lead",
+      "confidence label": "Collateral clue",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "katarina_popovcic",
+    "data": {
+      "gender": "F",
+      "first name": "Katarina",
+      "last name": "Popovčić",
+      "display": "Katarina Popovčić",
+      "lifespan": "1891 - ?",
+      "place": "Pokupsko",
+      "confidence": "strong_lead",
+      "confidence label": "Collateral clue",
+      "notes": "Likely same parent couple; indexed surname may be Topovčić.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "pavao_popovcic_child",
+    "data": {
+      "gender": "M",
+      "first name": "Pavao",
+      "last name": "Popovčić",
+      "display": "Pavao Popovčić Jr.",
+      "lifespan": "1894 - ?",
+      "place": "Pokupsko",
+      "confidence": "strong_lead",
+      "confidence label": "Collateral clue",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "kata_popovcic_child",
+    "data": {
+      "gender": "F",
+      "first name": "Kata",
+      "last name": "Popovčić",
+      "display": "Kata Popovčić",
+      "lifespan": "? - 1895",
+      "place": "Pokupsko",
+      "confidence": "strong_lead",
+      "confidence label": "Collateral clue",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "josip_popovcic_sibling",
+    "data": {
+      "gender": "M",
+      "first name": "Josip / Joso",
+      "last name": "Popovčić",
+      "display": "Josip / Joso Popovčić",
+      "lifespan": "1897 - ?",
+      "place": "Pokupsko",
+      "confidence": "strong_lead",
+      "confidence label": "Strong surname bridge",
+      "notes": "Collateral child/marriage bridge for Pavao Popovčić + Mara Išek.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_popovcic",
+        "mata_mara_isek"
+      ]
+    }
+  },
+  {
+    "id": "joseph_zaluski_child",
+    "data": {
+      "gender": "M",
+      "first name": "Joseph",
+      "last name": "Zaluski",
+      "display": "Joseph Zaluski child",
+      "lifespan": "c. 1917 - 1918",
+      "place": "North Braddock",
+      "confidence": "strong_lead",
+      "confidence label": "Child death clue",
+      "notes": "PA death index proves entry; parent names need certificate.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "john_richard_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "John Richard",
+      "last name": "Zaluski",
+      "display": "John Richard Zaluski",
+      "lifespan": "1914 - 1980",
+      "place": "Pittsburgh / North Braddock",
+      "confidence": "strong_lead",
+      "confidence label": "Sibling bridge",
+      "notes": "Sibling in Zaluski cluster; service/death clues logged.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "matthew_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "Matthew",
+      "last name": "Zaluski",
+      "display": "Matthew Zaluski",
+      "lifespan": "1919 - ?",
+      "place": "North Braddock; Independence Township",
+      "confidence": "strong_lead",
+      "confidence label": "Birth-index bridge",
+      "notes": "PA birth index certificate 42910; mother indexed Anna Papavcic.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "joanna_caroline_zaluski",
+    "data": {
+      "gender": "F",
+      "first name": "Joanna Caroline",
+      "last name": "Zaluski",
+      "display": "Joanna Caroline Zaluski",
+      "lifespan": "",
+      "place": "Pennsylvania",
+      "confidence": "strong_lead",
+      "confidence label": "Sibling clue",
+      "notes": "Named in sibling cluster as Joanna Caroline Zaluski Shelleby.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "philip_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "Philip",
+      "last name": "Zaluski",
+      "display": "Philip Zaluski",
+      "lifespan": "1926 - 2000",
+      "place": "Pittsburgh area; Independence Township",
+      "confidence": "strong_lead",
+      "confidence label": "Sibling bridge",
+      "notes": "NUMIDENT-derived entry names parents Joseph Zaluski + Anna Popovich; 1950 census steel-mill work.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "nikola_lorkovic",
+    "data": {
+      "gender": "M",
+      "first name": "Nikola",
+      "last name": "Lorković",
+      "display": "Nikola Lorković",
+      "lifespan": "",
+      "place": "Dubravci 2",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Earliest named Lorković ancestor in Dubravci family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "agata_benic"
+      ],
+      "children": [
+        "pero_lorkovic"
+      ]
+    }
+  },
+  {
+    "id": "agata_benic",
+    "data": {
+      "gender": "F",
+      "first name": "Agata",
+      "last name": "Benić",
+      "display": "Agata r. Benić",
+      "lifespan": "",
+      "place": "Dubravci",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Associated spouse of Nikola Lorković in family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "nikola_lorkovic"
+      ],
+      "children": [
+        "pero_lorkovic"
+      ]
+    }
+  },
+  {
+    "id": "pero_lorkovic",
+    "data": {
+      "gender": "M",
+      "first name": "Pero / Petar",
+      "last name": "Lorković",
+      "display": "Pero / Petar Lorković",
+      "lifespan": "1849 - 1923",
+      "place": "Dubravci 2",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary parent",
+      "notes": "Father of Pavao in official extract; dates from Lorković family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "nikola_lorkovic",
+        "agata_benic"
+      ],
+      "spouses": [
+        "bara_belic"
+      ],
+      "children": [
+        "pavao_lorkovic",
+        "mirko_lorkovic"
+      ]
+    }
+  },
+  {
+    "id": "bara_belic",
+    "data": {
+      "gender": "F",
+      "first name": "Bara",
+      "last name": "Belić",
+      "display": "Bara r. Belić",
+      "lifespan": "1858 - 1919",
+      "place": "Dubravci 2",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary parent",
+      "notes": "Mother of Pavao in official extract; dates from Lorković family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "pero_lorkovic"
+      ],
+      "children": [
+        "pavao_lorkovic",
+        "mirko_lorkovic"
+      ]
+    }
+  },
+  {
+    "id": "pavao_lorkovic",
+    "data": {
+      "gender": "M",
+      "first name": "Pavao / Paul",
+      "last name": "Lorković / Lorkovich",
+      "display": "Pavao / Paul Lorković",
+      "lifespan": "1894 - 1974",
+      "place": "Dubravci 2; Aliquippa",
+      "confidence": "proven",
+      "confidence label": "Proven core person",
+      "notes": "Official birth extract gives 20 May 1894, Dubravci 2, parents Pero Lorković + Bara Belić.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pero_lorkovic",
+        "bara_belic"
+      ],
+      "spouses": [
+        "kata_cavlovic"
+      ],
+      "children": [
+        "anna_marion_lorkovich",
+        "private_family_member_02",
+        "private_family_member_04",
+        "stephan_lorkovich",
+        "private_family_member_05"
+      ]
+    }
+  },
+  {
+    "id": "mirko_lorkovic",
+    "data": {
+      "gender": "M",
+      "first name": "Mirko",
+      "last name": "Lorković",
+      "display": "Mirko Lorković",
+      "lifespan": "1888 - 1978",
+      "place": "Dubravci",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling/collateral",
+      "notes": "Lorković family summary; treated as Pavao's likely brother, not as direct proof from official extract.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pero_lorkovic",
+        "bara_belic"
+      ],
+      "spouses": [
+        "ana_lorkovic_wife"
+      ],
+      "children": [
+        "josip_joe_lorkovich_windsor"
+      ]
+    }
+  },
+  {
+    "id": "ana_lorkovic_wife",
+    "data": {
+      "gender": "F",
+      "first name": "Ana",
+      "last name": "Lorković",
+      "display": "Ana Lorković",
+      "lifespan": "",
+      "place": "Dubravci",
+      "confidence": "proven",
+      "confidence label": "Obituary parent",
+      "notes": "Mother of Josip 'Joe' Lorkovich of Windsor per obituary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "mirko_lorkovic"
+      ],
+      "children": [
+        "josip_joe_lorkovich_windsor"
+      ]
+    }
+  },
+  {
+    "id": "josip_joe_lorkovich_windsor",
+    "data": {
+      "gender": "M",
+      "first name": "Josip / Joe",
+      "last name": "Lorkovich",
+      "display": "Josip 'Joe' Lorkovich",
+      "lifespan": "1919 - 2006",
+      "place": "Dubravci; Windsor",
+      "confidence": "proven",
+      "confidence label": "Collateral obituary",
+      "notes": "Obituary names parents Mirko and Ana; handwritten note says nephew of Pavao and cousin of Stephan.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "mirko_lorkovic",
+        "ana_lorkovic_wife"
+      ],
+      "spouses": [
+        "private_family_member_01"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_01",
+    "data": {
+      "gender": "F",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "proven",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "spouses": [
+        "josip_joe_lorkovich_windsor"
+      ]
+    }
+  },
+  {
+    "id": "ivan_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Ivan",
+      "last name": "Čavlović",
+      "display": "Ivan Čavlović",
+      "lifespan": "",
+      "place": "Maletići 7",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Earliest named Čavlović ancestor in Maletići family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "doroteja_stankovic"
+      ],
+      "children": [
+        "martin_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "doroteja_stankovic",
+    "data": {
+      "gender": "F",
+      "first name": "Doroteja",
+      "last name": "Stanković",
+      "display": "Doroteja r. Stanković",
+      "lifespan": "",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Associated spouse of Ivan Čavlović in family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "ivan_cavlovic"
+      ],
+      "children": [
+        "martin_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "martin_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Martin",
+      "last name": "Čavlović",
+      "display": "Martin Čavlović",
+      "lifespan": "1830 - 1902",
+      "place": "Maletići 7",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Čavlović family summary gives dates; likely father of Petar/Pero.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "ivan_cavlovic",
+        "doroteja_stankovic"
+      ],
+      "spouses": [
+        "lucija_draganjac"
+      ],
+      "children": [
+        "petar_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "lucija_draganjac",
+    "data": {
+      "gender": "F",
+      "first name": "Lucija / Luca",
+      "last name": "Draganjac",
+      "display": "Lucija r. Draganjac",
+      "lifespan": "1836 - 1904",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Family-summary ancestor",
+      "notes": "Čavlović family summary gives dates; Draganjac appears in two generations.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "martin_cavlovic"
+      ],
+      "children": [
+        "petar_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "petar_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Petar / Pero",
+      "last name": "Čavlović",
+      "display": "Petar / Pero Čavlović",
+      "lifespan": "1860 - 1906",
+      "place": "Maletići 7",
+      "confidence": "proven",
+      "confidence label": "Proven parent",
+      "notes": "Father of Katarina in official birth extract; dates from family summary.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "martin_cavlovic",
+        "lucija_draganjac"
+      ],
+      "spouses": [
+        "ana_jana_draganjac"
+      ],
+      "children": [
+        "ivo_cavlovic",
+        "mato_cavlovic",
+        "franja_cavlovic",
+        "jaga_agata_cavlovic",
+        "kata_cavlovic",
+        "karlo_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "ana_jana_draganjac",
+    "data": {
+      "gender": "F",
+      "first name": "Ana / Jana",
+      "last name": "Draganjac",
+      "display": "Ana / Jana r. Draganjac",
+      "lifespan": "1863 - 1908",
+      "place": "Maletići 7",
+      "confidence": "proven",
+      "confidence label": "Proven parent",
+      "notes": "Mother of Katarina in official extract; family summary may read Jana.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "petar_cavlovic"
+      ],
+      "children": [
+        "ivo_cavlovic",
+        "mato_cavlovic",
+        "franja_cavlovic",
+        "jaga_agata_cavlovic",
+        "kata_cavlovic",
+        "karlo_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "ivo_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Ivo",
+      "last name": "Čavlović",
+      "display": "Ivo Čavlović",
+      "lifespan": "",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling",
+      "notes": "Appears in Čavlović family summary; line-level proof still needs recheck.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ]
+    }
+  },
+  {
+    "id": "mato_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Mate / Mato",
+      "last name": "Čavlović",
+      "display": "Mate / Mato Čavlović",
+      "lifespan": "",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling",
+      "notes": "Likely Katarina's brother; manifest indexing says Mato Cavlovic relationship 'Bro', but high-res review is needed.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ]
+    }
+  },
+  {
+    "id": "franja_cavlovic",
+    "data": {
+      "gender": "F",
+      "first name": "Franja",
+      "last name": "Čavlović",
+      "display": "Franja Čavlović",
+      "lifespan": "",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling",
+      "notes": "Appears in Čavlović family summary; line-level proof still needs recheck.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ]
+    }
+  },
+  {
+    "id": "jaga_agata_cavlovic",
+    "data": {
+      "gender": "F",
+      "first name": "Jaga / Agata",
+      "last name": "Čavlović",
+      "display": "Jaga / Agata Čavlović",
+      "lifespan": "1896 - ?",
+      "place": "Maletići; America",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling",
+      "notes": "Family summary points to Katarina's sister, not merely a sister-in-law.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ]
+    }
+  },
+  {
+    "id": "kata_cavlovic",
+    "data": {
+      "gender": "F",
+      "first name": "Kata / Katarina",
+      "last name": "Čavlović / Cavlovic",
+      "display": "Kata / Katarina Čavlović",
+      "lifespan": "1899 - 1981",
+      "place": "Maletić selo 7/38; Aliquippa",
+      "confidence": "proven",
+      "confidence label": "Proven core person",
+      "notes": "Official birth extract proves parents/place. Arrival proven 10 Jun 1921 on Belvedere from Trieste.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ],
+      "spouses": [
+        "pavao_lorkovic"
+      ],
+      "children": [
+        "anna_marion_lorkovich",
+        "private_family_member_02",
+        "private_family_member_04",
+        "stephan_lorkovich",
+        "private_family_member_05"
+      ]
+    }
+  },
+  {
+    "id": "karlo_cavlovic",
+    "data": {
+      "gender": "M",
+      "first name": "Karlo",
+      "last name": "Čavlović",
+      "display": "Karlo Čavlović",
+      "lifespan": "",
+      "place": "Maletići",
+      "confidence": "strong_lead",
+      "confidence label": "Likely sibling",
+      "notes": "Appears in Čavlović family summary; line-level proof still needs recheck.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "petar_cavlovic",
+        "ana_jana_draganjac"
+      ]
+    }
+  },
+  {
+    "id": "ana_cavlovic_manifest_candidate",
+    "data": {
+      "gender": "F",
+      "first name": "Ana / Anna",
+      "last name": "Čavlović",
+      "display": "Ana / Anna Čavlović",
+      "lifespan": "",
+      "place": "Manifest context",
+      "confidence": "candidate",
+      "confidence label": "Unattached candidate",
+      "notes": "Appears on/near passenger manifest context; not connected to sibling group until high-res review.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {}
+  },
+  {
+    "id": "private_family_member_02",
+    "data": {
+      "gender": "F",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "strong_lead",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "pavao_lorkovic",
+        "kata_cavlovic"
+      ],
+      "spouses": [
+        "private_family_member_03"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_03",
+    "data": {
+      "gender": "M",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "strong_lead",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "spouses": [
+        "private_family_member_02"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_04",
+    "data": {
+      "gender": "M",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "strong_lead",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "pavao_lorkovic",
+        "kata_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "stephan_lorkovich",
+    "data": {
+      "gender": "M",
+      "first name": "Stephan / Steve",
+      "last name": "Lorkovich",
+      "display": "Stephan 'Steve' Lorkovich",
+      "lifespan": "1927 - 2010",
+      "place": "Aliquippa",
+      "confidence": "proven",
+      "confidence label": "Obituary bridge",
+      "notes": "Obituary names parents Paul and Katherine (Cavlovic) Lorkovich and siblings.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_lorkovic",
+        "kata_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_05",
+    "data": {
+      "gender": "M",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "strong_lead",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "pavao_lorkovic",
+        "kata_cavlovic"
+      ]
+    }
+  },
+  {
+    "id": "anna_marion_lorkovich",
+    "data": {
+      "gender": "F",
+      "first name": "Anna Marion",
+      "last name": "Lorkovich",
+      "display": "Anna Marion Lorkovich",
+      "lifespan": "1924 - 1986",
+      "place": "Pennsylvania",
+      "confidence": "family_note",
+      "confidence label": "Direct-line family note",
+      "notes": "Family tree gives birth/death dates; daughter of Paul and Kata in family structure.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "pavao_lorkovic",
+        "kata_cavlovic"
+      ],
+      "spouses": [
+        "jacob_david_zaluski"
+      ],
+      "children": [
+        "private_family_member_06",
+        "private_family_member_07",
+        "private_family_member_08"
+      ]
+    }
+  },
+  {
+    "id": "jacob_david_zaluski",
+    "data": {
+      "gender": "M",
+      "first name": "Jacob / Jack David",
+      "last name": "Zaluski",
+      "display": "Jacob / Jack David Zaluski",
+      "lifespan": "1923 - 1987",
+      "place": "Pennsylvania",
+      "confidence": "family_note",
+      "confidence label": "Direct-line family note",
+      "notes": "Family tree gives dates and spouse; child of Joseph and Anna in family structure.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "parents": [
+        "josip_zaluski",
+        "ana_popovcic"
+      ],
+      "spouses": [
+        "anna_marion_lorkovich"
+      ],
+      "children": [
+        "private_family_member_06",
+        "private_family_member_07",
+        "private_family_member_08"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_06",
+    "data": {
+      "gender": "F",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "family_note",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "jacob_david_zaluski",
+        "anna_marion_lorkovich"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_07",
+    "data": {
+      "gender": "F",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "family_note",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "jacob_david_zaluski",
+        "anna_marion_lorkovich"
+      ],
+      "children": [
+        "private_family_member_09",
+        "private_family_member_10"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_08",
+    "data": {
+      "gender": "M",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "family_note",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "jacob_david_zaluski",
+        "anna_marion_lorkovich"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_09",
+    "data": {
+      "gender": "F",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "family_note",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "private_family_member_07"
+      ]
+    }
+  },
+  {
+    "id": "private_family_member_10",
+    "data": {
+      "gender": "M",
+      "first name": "Private",
+      "last name": "Family member",
+      "display": "Private family member",
+      "lifespan": "",
+      "place": "",
+      "confidence": "family_note",
+      "confidence label": "Private living or recent family member",
+      "notes": "Details withheld for privacy in the public copy.",
+      "sources": []
+    },
+    "rels": {
+      "parents": [
+        "private_family_member_07"
+      ]
+    }
+  }
+]

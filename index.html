@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Croatian Family Tree - Public View</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "d3": "https://unpkg.com/d3@7?module"
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/d3@7"></script>
+    <link rel="stylesheet" href="https://unpkg.com/family-chart@0.9.0/dist/styles/family-chart.css">
+    <script type="module" src="https://unpkg.com/family-chart@0.9.0/dist/family-chart.esm.js"></script>
+    <style>
+      :root {
+        --ink: #17202a;
+        --muted: #5d6b7a;
+        --line: #d9e0e7;
+        --paper: #f7f9fb;
+        --panel: #ffffff;
+        --proven: #2f7d59;
+        --strong: #92712b;
+        --candidate: #7c657e;
+        --family: #3d70a2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 340px;
+        min-height: 100vh;
+      }
+
+      .stage {
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        min-width: 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 20px 14px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.15;
+      }
+
+      .subtitle {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .actions a,
+      .actions button {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink);
+        font: inherit;
+        font-size: 13px;
+        padding: 8px 10px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .tree-controls {
+        display: grid;
+        gap: 10px;
+      }
+
+      .tree-controls select {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink);
+        font: inherit;
+        font-size: 13px;
+        min-height: 38px;
+        padding: 8px;
+      }
+
+      .shortcut-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .shortcut-grid button,
+      .detail button {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink);
+        cursor: pointer;
+        font: inherit;
+        font-size: 12px;
+        padding: 7px 8px;
+      }
+
+      #FamilyChart {
+        width: 100%;
+        height: calc(100vh - 76px);
+        min-height: 640px;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+          radial-gradient(circle at top left, rgba(47, 125, 89, 0.12), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(61, 112, 162, 0.11), transparent 38%),
+          #eef3f6;
+      }
+
+      aside {
+        display: grid;
+        grid-template-rows: auto auto minmax(0, 1fr);
+        gap: 14px;
+        padding: 18px;
+        border-left: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 14px;
+      }
+
+      .panel h2 {
+        margin: 0 0 10px;
+        font-size: 15px;
+      }
+
+      .legend {
+        display: grid;
+        gap: 8px;
+        font-size: 13px;
+      }
+
+      .legend-row {
+        display: grid;
+        grid-template-columns: 18px 1fr;
+        gap: 8px;
+        align-items: start;
+      }
+
+      .swatch {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        border: 2px solid currentColor;
+      }
+
+      .swatch.proven {
+        color: var(--proven);
+      }
+
+      .swatch.strong {
+        color: var(--strong);
+        border-style: dashed;
+      }
+
+      .swatch.candidate {
+        color: var(--candidate);
+        opacity: 0.7;
+      }
+
+      .swatch.family {
+        color: var(--family);
+      }
+
+      .detail {
+        overflow: auto;
+      }
+
+      .detail-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+
+      .detail-row {
+        margin: 10px 0;
+      }
+
+      .detail-section {
+        border-top: 1px solid var(--line);
+        margin-top: 14px;
+        padding-top: 12px;
+      }
+
+      .detail-section h3 {
+        font-size: 13px;
+        margin: 0 0 8px;
+      }
+
+      .detail-list {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .detail-list li {
+        list-style: none;
+      }
+
+      .relation-button {
+        width: 100%;
+        text-align: left;
+      }
+
+      .source-link {
+        color: #245f8f;
+        overflow-wrap: anywhere;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
+      .field-grid {
+        display: grid;
+        gap: 8px;
+      }
+
+      .label {
+        color: var(--muted);
+        display: block;
+        font-size: 11px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .value {
+        display: block;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+
+      .f3 .card {
+        filter: drop-shadow(0 4px 12px rgba(18, 28, 38, 0.14));
+      }
+
+      .f3 .links_view path.link {
+        fill: none !important;
+        opacity: 0.82 !important;
+        stroke: #526475 !important;
+        stroke-linecap: round !important;
+        stroke-linejoin: round !important;
+        stroke-width: 2.6px !important;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .f3 .links_view path.link:hover {
+        opacity: 1 !important;
+        stroke: #263746 !important;
+        stroke-width: 3.2px !important;
+      }
+
+      .f3 .card-inner {
+        border-radius: 8px !important;
+        border: 2px solid #9aa8b7 !important;
+        background: #fff !important;
+        color: #17202a !important;
+      }
+
+      .f3 .card[data-confidence="proven"] .card-inner {
+        border-color: var(--proven) !important;
+      }
+
+      .f3 .card[data-confidence="strong_lead"] .card-inner {
+        border-color: var(--strong) !important;
+        border-style: dashed !important;
+      }
+
+      .f3 .card[data-confidence="candidate"] {
+        opacity: 0.78;
+      }
+
+      .f3 .card[data-confidence="candidate"] .card-inner {
+        border-color: var(--candidate) !important;
+        border-style: dashed !important;
+        background: #fbf8fb !important;
+      }
+
+      .f3 .card[data-confidence="family_note"] .card-inner {
+        border-color: var(--family) !important;
+      }
+
+      .f3 .card-label div:first-child {
+        font-weight: 700;
+      }
+
+      .f3 .card-label div {
+        overflow-wrap: anywhere;
+      }
+
+      .f3 .card-label div:nth-child(3) {
+        color: #5d6b7a;
+        font-size: 11px;
+      }
+
+      .f3 .card-label div:nth-child(4) {
+        border-top: 1px solid rgba(23, 32, 42, 0.12);
+        margin-top: 4px;
+        padding-top: 4px;
+        font-size: 11px;
+      }
+
+      .status {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .microcopy {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 980px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        aside {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+
+        #FamilyChart {
+          height: 70vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <section class="stage">
+        <header>
+          <div>
+            <h1>Croatian Family Tree</h1>
+            <div class="subtitle">Redacted public family-view copy. Private research files remain canonical.</div>
+          </div>
+          <div class="actions">
+            <button type="button" id="centerButton">Center</button>
+            <a href="family_tree_data.json">Redacted JSON</a>
+          </div>
+        </header>
+        <div id="FamilyChart" class="f3" aria-label="Interactive Croatian family tree"></div>
+      </section>
+      <aside>
+        <section class="panel">
+          <h2>Chart Focus</h2>
+          <div class="tree-controls">
+            <select id="personSelect" aria-label="Choose the person to center in the chart"></select>
+            <div class="shortcut-grid" aria-label="Family tree shortcuts">
+              <button type="button" data-focus-id="anna_marion_lorkovich">Anna Marion</button>
+              <button type="button" data-focus-id="jacob_david_zaluski">Jacob</button>
+              <button type="button" data-focus-id="kata_cavlovic">Kata</button>
+              <button type="button" data-focus-id="josip_zaluski">Josip</button>
+              <button type="button" data-focus-id="mata_mara_isek">Mara Išek</button>
+            </div>
+            <div class="microcopy" id="visibleCount">Family-chart renders one focused branch at a time.</div>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Legend</h2>
+          <div class="legend">
+            <div class="legend-row"><span class="swatch proven"></span><span>Proven: direct record, official extract, or viewed source.</span></div>
+            <div class="legend-row"><span class="swatch strong"></span><span>Strong lead: source-backed but still needs a bridge or original.</span></div>
+            <div class="legend-row"><span class="swatch candidate"></span><span>Candidate: do not connect as proven yet.</span></div>
+            <div class="legend-row"><span class="swatch family"></span><span>Family note: from family paper or oral line.</span></div>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Evidence Boundary</h2>
+          <div class="status">This public chart intentionally preserves uncertainty while withholding private source files and recent-family details. The private research workspace remains canonical.</div>
+        </section>
+        <section class="panel detail" id="detailPanel">
+          <div class="detail-title">Select a person</div>
+          <div class="status">Click a card to see notes, location, confidence, and source pointers.</div>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module">
+      import * as f3 from "https://unpkg.com/family-chart@0.9.0/dist/family-chart.esm.js";
+
+      const detailPanel = document.getElementById("detailPanel");
+      const chartRoot = document.getElementById("FamilyChart");
+      const centerButton = document.getElementById("centerButton");
+      const personSelect = document.getElementById("personSelect");
+      const visibleCount = document.getElementById("visibleCount");
+      let activeChart;
+      let activeData = [];
+
+      const confidenceLabels = {
+        proven: "Proven",
+        strong_lead: "Strong lead",
+        candidate: "Candidate",
+        family_note: "Family note"
+      };
+
+      const escapeHtml = (value) =>
+        String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+
+      function personLabel(person) {
+        const data = person?.data || {};
+        return data.display || `${data["first name"] || ""} ${data["last name"] || ""}`.trim() || person.id;
+      }
+
+      function personById(id) {
+        return activeData.find((person) => person.id === id);
+      }
+
+      function sortPeople(data) {
+        return [...data].sort((a, b) => personLabel(a).localeCompare(personLabel(b)));
+      }
+
+      function updateVisibleCount(chart) {
+        const visible = chart.store.getTree()?.data?.filter((node) => !node.data?.data?._to_add)?.length || 0;
+        const total = activeData.length;
+        const main = activeData.find((person) => person.id === chart.store.getMainId());
+        const candidates = activeData.filter((person) => person.data?.confidence === "candidate").length;
+        visibleCount.textContent = `Showing ${visible} chart cards around ${personLabel(main)}. Dataset has ${total} people, including ${candidates} candidates. Pick another focus to jump branches.`;
+      }
+
+      function annotateConfidenceCards() {
+        activeData.forEach((person) => {
+          const card = document.querySelector(`.card[data-id="${CSS.escape(person.id)}"]`);
+          if (card) card.dataset.confidence = person.data?.confidence || "";
+        });
+      }
+
+      function focusPerson(id) {
+        if (!activeChart || !id) return;
+        activeChart.store.updateMainId(id);
+        activeChart.updateTree({ tree_position: "fit", transition_time: 600 });
+        personSelect.value = id;
+        const person = activeData.find((item) => item.id === id);
+        if (person) showPerson(person);
+        updateVisibleCount(activeChart);
+      }
+
+      function populatePersonSelect(data) {
+        personSelect.innerHTML = sortPeople(data)
+          .map((person) => `<option value="${escapeHtml(person.id)}">${escapeHtml(personLabel(person))}</option>`)
+          .join("");
+        personSelect.addEventListener("change", (event) => focusPerson(event.target.value));
+        document.querySelectorAll("[data-focus-id]").forEach((button) => {
+          button.addEventListener("click", () => focusPerson(button.dataset.focusId));
+        });
+      }
+
+      function relationList(title, ids = []) {
+        if (!ids.length) {
+          return `
+            <div class="detail-section">
+              <h3>${escapeHtml(title)}</h3>
+              <div class="status">None recorded in the chart data.</div>
+            </div>
+          `;
+        }
+
+        const items = ids.map((id) => {
+          const person = personById(id);
+          const label = person ? personLabel(person) : id;
+          const confidence = person?.data?.["confidence label"] || confidenceLabels[person?.data?.confidence] || "";
+          return `
+            <li>
+              <button type="button" class="relation-button" data-related-id="${escapeHtml(id)}">
+                ${escapeHtml(label)}${confidence ? `<br><span class="microcopy">${escapeHtml(confidence)}</span>` : ""}
+              </button>
+            </li>
+          `;
+        }).join("");
+
+        return `
+          <div class="detail-section">
+            <h3>${escapeHtml(title)}</h3>
+            <ul class="detail-list">${items}</ul>
+          </div>
+        `;
+      }
+
+      function sourceList(sources = []) {
+        if (!sources.length) return `<div class="status">Source details withheld for privacy.</div>`;
+        return `
+          <ul class="detail-list">
+            ${sources.map((source) => `
+              <li><span class="source-link">${escapeHtml(source)}</span></li>
+            `).join("")}
+          </ul>
+        `;
+      }
+
+      function siblingIds(personId, parentIds = []) {
+        if (!personId || !parentIds.length) return [];
+        const siblings = new Set();
+        parentIds.forEach((parentId) => {
+          const parent = personById(parentId);
+          (parent?.rels?.children || []).forEach((childId) => {
+            if (childId !== personId) siblings.add(childId);
+          });
+        });
+        return [...siblings];
+      }
+
+      function showPerson(person) {
+        const personId = person?.id || person?.data?.id;
+        const data = person?.data?.data || person?.data || {};
+        const datum = personById(personId) || person;
+        const rels = datum?.rels || {};
+        const fullName = data.display || `${data["first name"] || ""} ${data["last name"] || ""}`.trim();
+        detailPanel.innerHTML = `
+          <div class="detail-title">${escapeHtml(fullName || "Unknown person")}</div>
+          <div class="field-grid">
+            <div class="detail-row"><span class="label">Given name</span><span class="value">${escapeHtml(data["first name"] || "Unknown")}</span></div>
+            <div class="detail-row"><span class="label">Surname / family name</span><span class="value">${escapeHtml(data["last name"] || "Unknown")}</span></div>
+            <div class="detail-row"><span class="label">Lifespan</span><span class="value">${escapeHtml(data.lifespan || "Unknown")}</span></div>
+            <div class="detail-row"><span class="label">Location</span><span class="value">${escapeHtml(data.place || "Unknown")}</span></div>
+            <div class="detail-row"><span class="label">Gender</span><span class="value">${escapeHtml(data.gender || "Unknown")}</span></div>
+            <div class="detail-row"><span class="label">Evidence status</span><span class="value">${escapeHtml(data["confidence label"] || confidenceLabels[data.confidence] || data.confidence || "Unmarked")}</span></div>
+          </div>
+          <div class="detail-section">
+            <h3>Research Notes</h3>
+            <div class="value">${escapeHtml(data.notes || "No notes recorded in the chart data.")}</div>
+          </div>
+          ${relationList("Parents", rels.parents)}
+          ${relationList("Siblings", siblingIds(personId, rels.parents))}
+          ${relationList("Spouses", rels.spouses)}
+          ${relationList("Children", rels.children)}
+          <div class="detail-section">
+            <h3>Source References</h3>
+            ${sourceList(data.sources)}
+          </div>
+          ${personId ? `<button type="button" id="focusSelectedButton">Center this person</button>` : ""}
+        `;
+        const focusButton = document.getElementById("focusSelectedButton");
+        if (focusButton) focusButton.addEventListener("click", () => focusPerson(personId));
+        detailPanel.querySelectorAll("[data-related-id]").forEach((button) => {
+          button.addEventListener("click", () => focusPerson(button.dataset.relatedId));
+        });
+      }
+
+      async function loadData() {
+        const response = await fetch("family_tree_data.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`Unable to load family_tree_data.json: ${response.status}`);
+        return response.json();
+      }
+
+      function renderTree(data) {
+        const chart = f3.createChart("#FamilyChart", data);
+        chart.setSingleParentEmptyCard(false);
+        chart.setShowSiblingsOfMain(true);
+        chart
+          .setCardHtml()
+          .setCardDisplay([
+            (d) => d.data.display || `${d.data["first name"] || ""} ${d.data["last name"] || ""}`,
+            (d) => d.data.lifespan || "",
+            (d) => d.data.place || "",
+            (d) => d.data["confidence label"] || confidenceLabels[d.data.confidence] || ""
+          ])
+          .setOnCardClick((event, d) => showPerson(d));
+        chart.afterUpdate = () => {
+          annotateConfidenceCards();
+          updateVisibleCount(chart);
+        };
+        if (data.some((person) => person.id === "anna_marion_lorkovich")) {
+          chart.store.updateMainId("anna_marion_lorkovich");
+        }
+        chart.updateTree({ initial: true });
+
+        centerButton.addEventListener("click", () => chart.updateTree({ tree_position: "fit", transition_time: 500 }));
+        return chart;
+      }
+
+      try {
+        const data = await loadData();
+        activeData = data;
+        populatePersonSelect(data);
+        window.familyChartData = data;
+        activeChart = renderTree(data);
+        personSelect.value = activeChart.store.getMainId();
+        showPerson(data.find((person) => person.id === activeChart.store.getMainId()) || data[0]);
+        window.familyChart = activeChart;
+      } catch (error) {
+        chartRoot.innerHTML = `
+          <div style="max-width:620px;margin:80px auto;padding:24px;background:#fff;border:1px solid #d9e0e7;border-radius:8px;">
+            <h2 style="margin-top:0;">Could not load chart data</h2>
+            <p>Run a local server from this public folder, then open <code>http://localhost:8000/</code>.</p>
+            <pre style="white-space:pre-wrap;">${escapeHtml(error.message)}</pre>
+          </div>
+        `;
+      }
+    </script>
+  </body>
+</html>
