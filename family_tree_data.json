@@ -593,10 +593,10 @@
       ],
       "children": [
         "anna_marion_lorkovich",
-        "private_family_member_02",
-        "private_family_member_04",
+        "mary_lorkovich",
+        "paul_skeeter_lorkovich",
         "stephan_lorkovich",
-        "private_family_member_05"
+        "john_tar_lorkovich"
       ]
     }
   },
@@ -676,23 +676,25 @@
         "ana_lorkovic_wife"
       ],
       "spouses": [
-        "private_family_member_01"
+        "kathy_frketic"
       ]
     }
   },
   {
-    "id": "private_family_member_01",
+    "id": "kathy_frketic",
     "data": {
       "gender": "F",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Kathy",
+      "last name": "Frketic",
+      "display": "Kathy Frketic",
       "lifespan": "",
-      "place": "",
+      "place": "Windsor collateral",
       "confidence": "proven",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Obituary spouse",
+      "notes": "Spouse of Josip 'Joe' Lorkovich per obituary.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "spouses": [
@@ -986,10 +988,10 @@
       ],
       "children": [
         "anna_marion_lorkovich",
-        "private_family_member_02",
-        "private_family_member_04",
+        "mary_lorkovich",
+        "paul_skeeter_lorkovich",
         "stephan_lorkovich",
-        "private_family_member_05"
+        "john_tar_lorkovich"
       ]
     }
   },
@@ -1035,18 +1037,20 @@
     "rels": {}
   },
   {
-    "id": "private_family_member_02",
+    "id": "mary_lorkovich",
     "data": {
       "gender": "F",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
-      "lifespan": "",
-      "place": "",
+      "first name": "Mary",
+      "last name": "Lorkovich",
+      "display": "Mary Lorkovich Butcher",
+      "lifespan": "1925 - ?",
+      "place": "East Liberty / Pittsburgh",
       "confidence": "strong_lead",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Child bridge",
+      "notes": "1947 marriage application crop names parents Paul Lorkovich and Catherine/Cholovich/Caulovic variants.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1054,43 +1058,47 @@
         "kata_cavlovic"
       ],
       "spouses": [
-        "private_family_member_03"
+        "marion_gray_butcher"
       ]
     }
   },
   {
-    "id": "private_family_member_03",
+    "id": "marion_gray_butcher",
     "data": {
       "gender": "M",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Marion Gray",
+      "last name": "Butcher",
+      "display": "Marion Gray Butcher",
       "lifespan": "",
-      "place": "",
+      "place": "Pennsylvania",
       "confidence": "strong_lead",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Spouse bridge",
+      "notes": "Spouse of Mary Lorkovich per family/U.S. record clues.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "spouses": [
-        "private_family_member_02"
+        "mary_lorkovich"
       ]
     }
   },
   {
-    "id": "private_family_member_04",
+    "id": "paul_skeeter_lorkovich",
     "data": {
       "gender": "M",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
-      "lifespan": "",
-      "place": "",
+      "first name": "Paul \"Skeeter\"",
+      "last name": "Lorkovich",
+      "display": "Paul 'Skeeter' Lorkovich",
+      "lifespan": "1926 - ?",
+      "place": "Etna; Aliquippa",
       "confidence": "strong_lead",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Child / memorial bridge",
+      "notes": "Public memorial snippet names parents and siblings; not a primary record.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1123,18 +1131,20 @@
     }
   },
   {
-    "id": "private_family_member_05",
+    "id": "john_tar_lorkovich",
     "data": {
       "gender": "M",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "John \"Tar\"",
+      "last name": "Lorkovich",
+      "display": "John 'Tar' Lorkovich",
       "lifespan": "",
-      "place": "",
+      "place": "Aliquippa",
       "confidence": "strong_lead",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Sibling obituary clue",
+      "notes": "Named as sibling in Stephan obituary.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1168,9 +1178,9 @@
         "jacob_david_zaluski"
       ],
       "children": [
-        "private_family_member_06",
-        "private_family_member_07",
-        "private_family_member_08"
+        "carol_anne_zaluski",
+        "barbara_ann_guenter",
+        "jack_zaluski_sibling"
       ]
     }
   },
@@ -1199,25 +1209,27 @@
         "anna_marion_lorkovich"
       ],
       "children": [
-        "private_family_member_06",
-        "private_family_member_07",
-        "private_family_member_08"
+        "carol_anne_zaluski",
+        "barbara_ann_guenter",
+        "jack_zaluski_sibling"
       ]
     }
   },
   {
-    "id": "private_family_member_06",
+    "id": "carol_anne_zaluski",
     "data": {
       "gender": "F",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
-      "lifespan": "",
-      "place": "",
+      "first name": "Carol Anne",
+      "last name": "Zaluski",
+      "display": "Carol Anne Zaluski",
+      "lifespan": "1949 -",
+      "place": "Pennsylvania",
       "confidence": "family_note",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Family note",
+      "notes": "Handwritten family tree lists birth 14 Jan 1949.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1227,18 +1239,20 @@
     }
   },
   {
-    "id": "private_family_member_07",
+    "id": "barbara_ann_guenter",
     "data": {
       "gender": "F",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Barbara Ann",
+      "last name": "Guenter / Zaluski",
+      "display": "Barbara Ann Guenter (Zaluski)",
       "lifespan": "",
-      "place": "",
+      "place": "Pennsylvania",
       "confidence": "family_note",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Family note",
+      "notes": "Added from user family note: Barbara Ann Guenter, maiden name Zaluski, is a sibling of Carol Anne Zaluski and Jack Zaluski.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1246,24 +1260,26 @@
         "anna_marion_lorkovich"
       ],
       "children": [
-        "private_family_member_09",
-        "private_family_member_10"
+        "lindsay_ann_susi",
+        "matthew_guenter"
       ]
     }
   },
   {
-    "id": "private_family_member_08",
+    "id": "jack_zaluski_sibling",
     "data": {
       "gender": "M",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Jack",
+      "last name": "Zaluski",
+      "display": "Jack Zaluski",
       "lifespan": "",
-      "place": "",
+      "place": "Pennsylvania",
       "confidence": "family_note",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Family note",
+      "notes": "Added from user family note as sibling of Carol Anne Zaluski and Barbara Ann Guenter. Kept distinct from Jacob / Jack David Zaluski, who is already recorded as Carol's father.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
@@ -1273,42 +1289,46 @@
     }
   },
   {
-    "id": "private_family_member_09",
+    "id": "lindsay_ann_susi",
     "data": {
       "gender": "F",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Lindsay Ann",
+      "last name": "Susi / Guenter",
+      "display": "Lindsay Ann Susi (Guenter)",
       "lifespan": "",
       "place": "",
       "confidence": "family_note",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Family note",
+      "notes": "Added from user family note: Lindsay Ann Susi, maiden name Guenter, is a child of Barbara Ann Guenter (Zaluski).",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
-        "private_family_member_07"
+        "barbara_ann_guenter"
       ]
     }
   },
   {
-    "id": "private_family_member_10",
+    "id": "matthew_guenter",
     "data": {
       "gender": "M",
-      "first name": "Private",
-      "last name": "Family member",
-      "display": "Private family member",
+      "first name": "Matthew",
+      "last name": "Guenter",
+      "display": "Matthew Guenter",
       "lifespan": "",
       "place": "",
       "confidence": "family_note",
-      "confidence label": "Private living or recent family member",
-      "notes": "Details withheld for privacy in the public copy.",
-      "sources": []
+      "confidence label": "Main person / family note",
+      "notes": "Added from user family note: Matthew Guenter is a child of Barbara Ann Guenter (Zaluski). This is the default focus person for the chart.",
+      "sources": [
+        "Private source on file"
+      ]
     },
     "rels": {
       "parents": [
-        "private_family_member_07"
+        "barbara_ann_guenter"
       ]
     }
   }

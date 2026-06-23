@@ -1,19 +1,19 @@
 # Croatian Family Tree Public View
 
-This repository hosts a redacted public copy of the interactive Croatian family tree. It is designed for GitHub Pages at:
+This repository hosts a public copy of the interactive Croatian family tree. It is designed for GitHub Pages at:
 
 https://abundant-pasta.github.io/croatian-geneaology-public/
 
 ## What is included
 
 - `index.html` - static interactive family tree page.
-- `family_tree_data.json` - redacted chart data used by the page.
+- `family_tree_data.json` - public chart data used by the page, with private source paths removed.
 
 ## What is intentionally excluded
 
-Raw records, correspondence, request drafts, source screenshots, source notes, maps, packets, and the private research god file are not published here. The private research workspace remains the canonical source of truth.
+Raw records, correspondence, request drafts, source screenshots, source notes, maps, and packets are not published here. The private research workspace remains the canonical source of truth.
 
-Likely living or recent family members are represented as private placeholders so relationships can still be understood without exposing personal details.
+Source references are shown as private-source placeholders rather than links to unpublished research files.
 
 ## Local preview
 

@@ -367,7 +367,7 @@
         <header>
           <div>
             <h1>Croatian Family Tree</h1>
-            <div class="subtitle">Redacted public family-view copy. Private research files remain canonical.</div>
+            <div class="subtitle">Public family-view copy. Private research files remain canonical.</div>
           </div>
           <div class="actions">
             <button type="button" id="centerButton">Center</button>
@@ -382,6 +382,10 @@
           <div class="tree-controls">
             <select id="personSelect" aria-label="Choose the person to center in the chart"></select>
             <div class="shortcut-grid" aria-label="Family tree shortcuts">
+              <button type="button" data-focus-id="carol_anne_zaluski">Carol</button>
+              <button type="button" data-focus-id="barbara_ann_guenter">Barbara</button>
+              <button type="button" data-focus-id="matthew_guenter">Matt</button>
+              <button type="button" data-focus-id="jack_zaluski_sibling">Jack</button>
               <button type="button" data-focus-id="anna_marion_lorkovich">Anna Marion</button>
               <button type="button" data-focus-id="jacob_david_zaluski">Jacob</button>
               <button type="button" data-focus-id="kata_cavlovic">Kata</button>
@@ -402,7 +406,7 @@
         </section>
         <section class="panel">
           <h2>Evidence Boundary</h2>
-          <div class="status">This public chart intentionally preserves uncertainty while withholding private source files and recent-family details. The private research workspace remains canonical.</div>
+          <div class="status">This public chart intentionally preserves uncertainty while withholding private source files. The private research workspace remains canonical.</div>
         </section>
         <section class="panel detail" id="detailPanel">
           <div class="detail-title">Select a person</div>
@@ -598,8 +602,8 @@
           annotateConfidenceCards();
           updateVisibleCount(chart);
         };
-        if (data.some((person) => person.id === "anna_marion_lorkovich")) {
-          chart.store.updateMainId("anna_marion_lorkovich");
+        if (data.some((person) => person.id === "carol_anne_zaluski")) {
+          chart.store.updateMainId("carol_anne_zaluski");
         }
         chart.updateTree({ initial: true });
 
