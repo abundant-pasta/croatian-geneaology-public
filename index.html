@@ -597,7 +597,14 @@
             (d) => d.data.place || "",
             (d) => d.data["confidence label"] || confidenceLabels[d.data.confidence] || ""
           ])
-          .setOnCardClick((event, d) => showPerson(d));
+          .setOnCardClick((event, d) => {
+            const personId = d?.id || d?.data?.id;
+            if (event?.detail >= 2 && personId) {
+              focusPerson(personId);
+              return;
+            }
+            showPerson(d);
+          });
         chart.afterUpdate = () => {
           annotateConfidenceCards();
           updateVisibleCount(chart);
