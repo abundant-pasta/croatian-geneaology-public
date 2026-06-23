@@ -1,23 +1,21 @@
 [
   {
-    "id": "stjepan_zaluski",
+    "id": "gjuro_zaluski",
     "data": {
       "gender": "M",
-      "first name": "Stjepan",
+      "first name": "Gjuro",
       "last name": "Zaluški",
-      "display": "Stjepan Zaluški",
-      "lifespan": "",
-      "place": "Pokupsko parish area",
-      "confidence": "proven",
-      "confidence label": "Proven parent",
-      "notes": "Father of Josip in 1905 Pokupsko marriage.",
+      "display": "Gjuro Zaluški",
+      "confidence": "candidate",
+      "confidence label": "Unresolved candidate parent link",
+      "notes": "Father named in the traceable 29 Jul 1879 Josip baptism candidate, with mother Agata Kuzmić. This candidate is not yet proven as the later 1905 groom; the prior 11/12 Mar 1879 Gladovec kbr. 23 claim is unsupported unless its source artifact is found.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
       "spouses": [
-        "jaga_kuzmic"
+        "agata_jaga_kuzmic"
       ],
       "children": [
         "josip_zaluski"
@@ -25,24 +23,22 @@
     }
   },
   {
-    "id": "jaga_kuzmic",
+    "id": "agata_jaga_kuzmic",
     "data": {
       "gender": "F",
-      "first name": "Jaga",
+      "first name": "Agata / Jaga",
       "last name": "Kuzmić",
-      "display": "Jaga Kuzmić",
-      "lifespan": "",
-      "place": "Pokupsko parish area",
-      "confidence": "proven",
-      "confidence label": "Proven parent",
-      "notes": "Mother of Josip in 1905 Pokupsko marriage.",
+      "display": "Agata / Jaga Kuzmić",
+      "confidence": "candidate",
+      "confidence label": "Unresolved candidate parent link",
+      "notes": "Mother named as Agata Kuzmić in the traceable 29 Jul 1879 Josip baptism candidate. Agata and Jaga/Jagica may overlap in this record set, but this parent link is not yet proven for the later 1905 groom.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
       "spouses": [
-        "stjepan_zaluski"
+        "gjuro_zaluski"
       ],
       "children": [
         "josip_zaluski"
@@ -56,19 +52,19 @@
       "first name": "Josip / Joseph",
       "last name": "Zaluški / Zaluski",
       "display": "Josip / Joseph Zaluski",
-      "lifespan": "c. 1877-1879 - 1947",
-      "place": "Pokupsko; North Braddock; Aliquippa",
+      "lifespan": "1879 - 1947",
+      "place": "Pokupsko parish area; Gladovec kbr. 41; North Braddock; Aliquippa",
       "confidence": "proven",
       "confidence label": "Proven core person",
-      "notes": "1905 Pokupsko marriage proves parents; 1920 declaration proves declared Baltimore arrival on Breslau.",
+      "notes": "Exact baptism and parents are unresolved. The traceable baptism candidate is Josip, born/baptized 29 Jul 1879, parents indexed/read as Gjuro Zaluški and Agata Kuzmić; it is not yet proven as the later 1905 groom. The prior 11/12 Mar 1879 Gladovec kbr. 23 claim is unsupported unless its source artifact is found. Married Ana Popović on 5 Sep 1905; later U.S. declaration proves declared Baltimore arrival on Breslau.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
       "parents": [
-        "stjepan_zaluski",
-        "jaga_kuzmic"
+        "gjuro_zaluski",
+        "agata_jaga_kuzmic"
       ],
       "spouses": [
         "ana_popovcic"
@@ -94,19 +90,12 @@
       "place": "Pokupsko parish area",
       "confidence": "candidate",
       "confidence label": "Candidate parent",
-      "notes": "Candidate father of Mara Išek from the best current baptism candidate: Mara Išek, baptized 15 Aug 1852. Needs household/status animarum or parent marriage before treating as proven.",
+      "notes": "Superseded collateral candidate from the former Popovčić/Išek lane; no longer attached to the direct Ana Popović line after corrected 1905 marriage-row read.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "spouses": [
-        "dora_zugaj_candidate"
-      ],
-      "children": [
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "dora_zugaj_candidate",
@@ -119,81 +108,154 @@
       "place": "Pokupsko parish area",
       "confidence": "candidate",
       "confidence label": "Candidate parent",
-      "notes": "Candidate mother of Mara Išek from the best current baptism candidate: Mara Išek, baptized 15 Aug 1852. Needs household/status animarum or parent marriage before treating as proven.",
+      "notes": "Superseded collateral candidate from the former Popovčić/Išek lane; no longer attached to the direct Ana Popović line after corrected 1905 marriage-row read.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "spouses": [
-        "joso_isek_candidate"
-      ],
-      "children": [
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
-    "id": "pavao_popovcic",
+    "id": "mijo_popovic_sr",
     "data": {
       "gender": "M",
-      "first name": "Pavao / Pavo",
-      "last name": "Popovčić",
-      "display": "Pavao Popovčić",
-      "lifespan": "",
-      "place": "Pokupsko parish area",
-      "confidence": "proven",
-      "confidence label": "Proven parent",
-      "notes": "Father of Ana in 1905 Pokupsko marriage; collateral child records support same family cluster.",
+      "first name": "Mijo",
+      "last name": "Popović",
+      "display": "Mijo Popović",
+      "confidence": "strong_lead",
+      "confidence label": "Parent-generation lead",
+      "notes": "Father of Mijo/Šimun Popović in the 26 Nov 1884 Pokupsko marriage row for Mijo Popović and Mara Kolar.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
       "spouses": [
-        "mata_mara_isek"
+        "bara_popovcic"
       ],
       "children": [
-        "ana_popovcic",
-        "agata_popovcic",
-        "katarina_popovcic",
-        "pavao_popovcic_child",
-        "kata_popovcic_child",
-        "josip_popovcic_sibling"
+        "simun_popovic"
       ]
     }
   },
   {
-    "id": "mata_mara_isek",
+    "id": "bara_popovcic",
     "data": {
       "gender": "F",
-      "first name": "Mata / Mara",
-      "last name": "Išek",
-      "display": "Mata / Mara Išek",
-      "lifespan": "",
-      "place": "Pokupsko parish area",
+      "first name": "Bara",
+      "last name": "Popovčić",
+      "display": "Bara Popovčić",
       "confidence": "strong_lead",
-      "confidence label": "Proven in marriage; Mara form strong",
-      "notes": "1905 marriage reads Mata/Jšek; collateral records point toward Mara Išek.",
+      "confidence label": "Parent-generation lead",
+      "notes": "Mother of Mijo/Šimun Popović in the 26 Nov 1884 Pokupsko marriage row for Mijo Popović and Mara Kolar.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
-      "parents": [
-        "joso_isek_candidate",
-        "dora_zugaj_candidate"
-      ],
       "spouses": [
-        "pavao_popovcic"
+        "mijo_popovic_sr"
       ],
       "children": [
-        "ana_popovcic",
-        "agata_popovcic",
-        "katarina_popovcic",
-        "pavao_popovcic_child",
-        "kata_popovcic_child",
-        "josip_popovcic_sibling"
+        "simun_popovic"
+      ]
+    }
+  },
+  {
+    "id": "simun_popovic",
+    "data": {
+      "gender": "M",
+      "first name": "Šimun / Mijo",
+      "last name": "Popović",
+      "display": "Šimun / Mijo Popović",
+      "confidence": "strong_lead",
+      "notes": "Father of Ana in the corrected 1905 marriage row as Šimun Popović. Likely same man as Mijo Popović, groom in the 26 Nov 1884 marriage to Mara Kolar, residence Pokupsko kbr. 29. Keep the double-name identity explicit until Ana baptism/status animarum closes it.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "mara_kolar"
+      ],
+      "children": [
+        "ana_popovcic"
+      ],
+      "parents": [
+        "mijo_popovic_sr",
+        "bara_popovcic"
+      ]
+    }
+  },
+  {
+    "id": "janko_kolar",
+    "data": {
+      "gender": "M",
+      "first name": "Janko",
+      "last name": "Kolar",
+      "display": "Janko Kolar",
+      "confidence": "strong_lead",
+      "confidence label": "Parent-generation lead",
+      "notes": "Father of Mara Kolar in the 26 Nov 1884 Pokupsko marriage row; likely source of the Janko house-branch or špicnam identifier seen around Mara.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "mara_jack"
+      ],
+      "children": [
+        "mara_kolar"
+      ]
+    }
+  },
+  {
+    "id": "mara_jack",
+    "data": {
+      "gender": "F",
+      "first name": "Mara",
+      "last name": "Jačk",
+      "display": "Mara Jačk",
+      "confidence": "strong_lead",
+      "confidence label": "Parent-generation lead",
+      "notes": "Mother of Mara Kolar in the 26 Nov 1884 Pokupsko marriage row.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "janko_kolar"
+      ],
+      "children": [
+        "mara_kolar"
+      ]
+    }
+  },
+  {
+    "id": "mara_kolar",
+    "data": {
+      "gender": "F",
+      "first name": "Mara",
+      "last name": "Kolar / Janko",
+      "display": "Mara Kolar / Mara Janko",
+      "confidence": "strong_lead",
+      "notes": "Mother of Ana in the corrected 1905 marriage row. Bride in the 26 Nov 1884 marriage to Mijo Popović; formal surname Kolar, with Janko likely functioning as the house-branch identifier from father Janko Kolar.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "simun_popovic"
+      ],
+      "children": [
+        "ana_popovcic"
+      ],
+      "parents": [
+        "janko_kolar",
+        "mara_jack"
       ]
     }
   },
@@ -202,21 +264,21 @@
     "data": {
       "gender": "F",
       "first name": "Ana / Anna",
-      "last name": "Popovčić / Popovich",
-      "display": "Ana / Anna Popovčić Zaluski",
-      "lifespan": "c. 1885 - 1951",
-      "place": "Pokupsko; North Braddock; Independence Township",
+      "last name": "Popović",
+      "display": "Ana / Anna Popović Zaluski",
+      "lifespan": "c. 1885/1886 - 1951",
+      "place": "Pokupsko kbr. 29; North Braddock; Independence Township",
       "confidence": "proven",
       "confidence label": "Proven core person",
-      "notes": "1905 marriage proves parents; 1885 baptism remains a strong candidate pending household bridge.",
+      "notes": "Corrected 1905 Pokupsko marriage entry no. 15 identifies Ana as bride, age 19, from Pokupsko house no. 29, daughter of Šimun Popović and Mara Kolar. The 1884 Mijo Popović + Mara Kolar marriage at Pokupsko kbr. 29 strongly bridges her parent generation; FamilySearch Pavao/Mata fields are bad indexing for the target row.",
       "sources": [
         "Private source on file"
       ]
     },
     "rels": {
       "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
+        "simun_popovic",
+        "mara_kolar"
       ],
       "spouses": [
         "josip_zaluski"
@@ -240,19 +302,14 @@
       "display": "Agata Popovčić",
       "lifespan": "1887 - ?",
       "place": "Pokupsko",
-      "confidence": "strong_lead",
+      "confidence": "candidate",
       "confidence label": "Collateral clue",
-      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster. Demoted to collateral after corrected 1905 marriage-row read; no longer treated as Ana Popović/Popovčić sibling without a new bridge.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "katarina_popovcic",
@@ -263,19 +320,14 @@
       "display": "Katarina Popovčić",
       "lifespan": "1891 - ?",
       "place": "Pokupsko",
-      "confidence": "strong_lead",
+      "confidence": "candidate",
       "confidence label": "Collateral clue",
-      "notes": "Likely same parent couple; indexed surname may be Topovčić.",
+      "notes": "Likely same parent couple; indexed surname may be Topovčić. Demoted to collateral after corrected 1905 marriage-row read; no longer treated as Ana Popović/Popovčić sibling without a new bridge.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "pavao_popovcic_child",
@@ -286,19 +338,14 @@
       "display": "Pavao Popovčić Jr.",
       "lifespan": "1894 - ?",
       "place": "Pokupsko",
-      "confidence": "strong_lead",
+      "confidence": "candidate",
       "confidence label": "Collateral clue",
-      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster. Demoted to collateral after corrected 1905 marriage-row read; no longer treated as Ana Popović/Popovčić sibling without a new bridge.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "kata_popovcic_child",
@@ -309,19 +356,14 @@
       "display": "Kata Popovčić",
       "lifespan": "? - 1895",
       "place": "Pokupsko",
-      "confidence": "strong_lead",
+      "confidence": "candidate",
       "confidence label": "Collateral clue",
-      "notes": "Collateral child in Ana's Popovčić/Išek cluster.",
+      "notes": "Collateral child in Ana's Popovčić/Išek cluster. Demoted to collateral after corrected 1905 marriage-row read; no longer treated as Ana Popović/Popovčić sibling without a new bridge.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "josip_popovcic_sibling",
@@ -332,19 +374,14 @@
       "display": "Josip / Joso Popovčić",
       "lifespan": "1897 - ?",
       "place": "Pokupsko",
-      "confidence": "strong_lead",
+      "confidence": "candidate",
       "confidence label": "Strong surname bridge",
-      "notes": "Collateral child/marriage bridge for Pavao Popovčić + Mara Išek.",
+      "notes": "Collateral child/marriage bridge for Pavao Popovčić + Mara Išek. Demoted to collateral after corrected 1905 marriage-row read; no longer treated as Ana Popović/Popovčić sibling without a new bridge.",
       "sources": [
         "Private source on file"
       ]
     },
-    "rels": {
-      "parents": [
-        "pavao_popovcic",
-        "mata_mara_isek"
-      ]
-    }
+    "rels": {}
   },
   {
     "id": "joseph_zaluski_child",
@@ -1329,6 +1366,48 @@
     "rels": {
       "parents": [
         "barbara_ann_guenter"
+      ]
+    }
+  },
+  {
+    "id": "josip_zaluski_gladovec23_collateral",
+    "data": {
+      "gender": "M",
+      "first name": "Josip",
+      "last name": "Zaluški",
+      "display": "Josip Zaluški of Gladovec 23",
+      "lifespan": "adult by 1884",
+      "place": "Gladovec kbr. 23",
+      "confidence": "candidate",
+      "confidence label": "Collateral lead",
+      "notes": "Adult same-household/same-name Zaluški lead: married Bara Sučec on 26 Nov 1884. Not the direct Josip, who was about five years old; likely uncle, cousin, or another Gladovec 23 household member.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "bara_sucec"
+      ]
+    }
+  },
+  {
+    "id": "bara_sucec",
+    "data": {
+      "gender": "F",
+      "first name": "Bara",
+      "last name": "Sučec",
+      "display": "Bara Sučec",
+      "confidence": "candidate",
+      "confidence label": "Collateral lead",
+      "notes": "Spouse of adult collateral Josip Zaluški of Gladovec kbr. 23 in the 26 Nov 1884 marriage noted during the Pokupsko image 39 review.",
+      "sources": [
+        "Private source on file"
+      ]
+    },
+    "rels": {
+      "spouses": [
+        "josip_zaluski_gladovec23_collateral"
       ]
     }
   }
